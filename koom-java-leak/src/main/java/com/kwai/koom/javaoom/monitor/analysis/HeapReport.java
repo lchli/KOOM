@@ -76,6 +76,8 @@ public class HeapReport {
     public String signature;//signature are computed by the sha1 of reference chain
     public List<PathItem> path = new ArrayList<>();
 
+    public String leakSize;
+
     //引用链Item
     public static class PathItem {
       String reference;//referenced instance's classname + filed name
